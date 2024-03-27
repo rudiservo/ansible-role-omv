@@ -1,0 +1,6 @@
+---
+# defaults file for ansible-role-OMV
+omv:
+  version: 7
+  release: sandworm
+

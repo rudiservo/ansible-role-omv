@@ -1,0 +1,6 @@
+---
+- name: Add OMV repository
+  include_tasks: repo.yaml
+
+- name: Install OMV
+  include_tasks: install.yaml

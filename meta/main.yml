@@ -1,0 +1,18 @@
+galaxy_info:
+  author: Rudi Servo
+  description: Open Media vault install
+  company: lavazores.com
+  role_name: openmediavault
+  galaxy_tags:
+    - omv
+    - openmediavault
+
+  license: GPL-2.0-or-later
+
+  min_ansible_version: 2.1
+
+  platforms:
+    - name: Debian
+      versions:
+        - 12
+

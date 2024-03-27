@@ -1,0 +1,13 @@
+---
+- name: Add OMV gpg signing key
+  apt_key:
+    url: https://packages.openmediavault.org/public/archive.key
+    state: present
+
+- name: add OMV package repository
+  apt_repository:
+    repo: deb https://packages.openmediavault.org/public {{ omv.release }} main
+    state: present
+    filename: openmediavault
+    update_cache: yes
+ 
