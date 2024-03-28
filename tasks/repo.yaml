@@ -1,4 +1,10 @@
 ---
+- name: Install gpg
+  apt:
+    name: gnupg
+    state: present
+    update_cache: yes
+
 - name: Add OMV gpg signing key
   apt_key:
     url: https://packages.openmediavault.org/public/archive.key
